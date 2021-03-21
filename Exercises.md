@@ -28,7 +28,6 @@ You fixed the test. Now:
 
 java -jar build/libs/bootcamp-java-project-1.0-SNAPSHOT.jar
 
-
 # EXERCISE 5: Start App with 2 Parameters
 
 Now you want to add parameters to your application, so you and other users can pass different values on startup.
@@ -40,4 +39,8 @@ Now you want to add parameters to your application, so you and other users can p
 
 # Code snippet for Exercise 5! # Code snippet to add inside Application.java on line 16 Logger log = LoggerFactory.getLogger(Application.class); try { String one = args[0]; String two = args[1]; log.info("Application will start with the parameters {} and {}", one, two); } catch (Exception e) { log.info("No parameters provided"); } 
 
-Java -jar Gradle param1 param2
+//Parameters: hello and world
+java -jar build/libs/bootcamp-java-project-1.0-SNAPSHOT.jar hello world
+
+Result:
+Application will start with the parameters hello and world
